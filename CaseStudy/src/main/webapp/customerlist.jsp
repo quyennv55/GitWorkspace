@@ -19,7 +19,7 @@
     </div>
     <div>
         <form action="seach" method="get">
-            <input type="search">
+            <input type="input" name="searchInput">
             <input type="submit" name="search" value="search">
         </form>
     </div>
@@ -29,7 +29,7 @@
             int numberOfRow = 5;
             String current_page = request.getParameter("pages");
         %>
-        <table name="listcustomer" weigth="100%">
+        <table name="listcustomer" width="100%">
         <form name="customer-list-form" method="post" action="CustomerDetailServlet">
             <tr>
                 <td></td>
@@ -81,13 +81,13 @@
     <div>
         <%
             int pageNumbers;
-            if(customerLineModelList.size()%2 ==0)
+            if(customerLineModelList.size()%numberOfRow ==0)
                 pageNumbers = customerLineModelList.size()/numberOfRow;
             else
                 pageNumbers = customerLineModelList.size()/numberOfRow +1;
             if(current_page != null){
                 Integer current = Integer.parseInt(current_page);
-                if(current !=1){
+                if(current >1){
                     %>
                     <a href="/CustomerLineServlet?pages=<%=current-1%>">Previous</a>
                     <%

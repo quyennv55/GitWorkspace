@@ -2,6 +2,7 @@
 <%@ page import="business_layer.models.CustomerModel" %>
 <%@ page import="business_layer.models.ProductModel" %>
 <%@ page import="java.util.List" %>
+<%@ page import="business_layer.models.OrderLineModel" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -94,7 +95,24 @@
                 </table>
             </div>
             <div id="tab2" class="tab_content">
-                <p> Content 2</p>
+                <table width="100%">
+                    <tr><td width="20%"><b>Order Number</b></td><td width="20%"><b>Contact</b></td><td width="10%"><b>Total Amount</b></td><td width="20%"><b>Creation Date</b></td><td width="20%"><b>Updated Date</b></td><td width="10%"><b>Year</b></td></tr>
+                    <%
+                        List<OrderLineModel> orderLineModels = (List<OrderLineModel>) session.getAttribute("orderLines");
+                        for(OrderLineModel orderLineModel:orderLineModels){
+                    %>
+                    <tr>
+                        <td><%=orderLineModel.getOrderNumber()%></td>
+                        <td><%=orderLineModel.getContact()%></td>
+                        <td><%=orderLineModel.getTotalAmount()%></td>
+                        <td><%=orderLineModel.getCreateDate()%></td>
+                        <td><%=orderLineModel.getUpdateDate()%></td>
+                        <td><%=orderLineModel.getYear()%></td>
+                    </tr>
+                    <%
+                        }
+                    %>
+                </table>
             </div>
         </div>
     </div>

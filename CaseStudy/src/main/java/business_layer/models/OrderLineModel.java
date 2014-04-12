@@ -7,6 +7,7 @@ public class OrderLineModel {
     String createDate;
     String updateDate;
     String year;
+    String status;
 
     public int getOrderNumber() {
         return orderNumber;
@@ -54,5 +55,13 @@ public class OrderLineModel {
 
     public void setYear(String year) {
         this.year = year;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

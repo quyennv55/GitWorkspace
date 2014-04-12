@@ -46,4 +46,5 @@ public class ProductModel {
     public void setModel(String model) {
         this.model = model;
     }
+
 }

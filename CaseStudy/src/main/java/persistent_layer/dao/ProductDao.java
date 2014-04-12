@@ -36,4 +36,29 @@ public class ProductDao {
         }
         return productEntitieses;
     }
+    // find product by order Number
+    public List<ProductEntities> findProductsByOrder(int orderNumber){
+        List<ProductEntities> productEntitieses = new ArrayList<ProductEntities>();
+        ProductEntities productEntities = null;
+        String sql = "SELECT p.* FROM products p JOIN order_detail od ON p.product_id = od.product_id WHERE od.order_number = "+ orderNumber + " ORDER BY p.year DESC";
+        Connection con = null;
+        try {
+            con = DBUtils.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()){
+                productEntities = new ProductEntities();
+                productEntities.setModel(rs.getString("model"));
+                productEntities.setManufacturer(rs.getString("manufacturer"));
+                productEntities.setPrice(rs.getInt("price"));
+                productEntities.setYear(rs.getString("year"));
+                productEntities.setProductName(rs.getString("product_name"));
+                productEntities.setProductId(rs.getInt("product_id"));
+                productEntitieses.add(productEntities);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return productEntitieses;
+    }
 }

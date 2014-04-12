@@ -35,4 +35,5 @@ public class ContactServices {
         ContactDao contactDao = new ContactDao();
         contactDao.changeMainContact(customerId);
     }
+
 }

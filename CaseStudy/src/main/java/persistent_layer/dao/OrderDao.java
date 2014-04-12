@@ -14,11 +14,12 @@ public class OrderDao {
     public List<OrderEntities> findOderById(int custormerId){
         List<OrderEntities> result = new ArrayList<OrderEntities>();
         OrderEntities orderEntities = null;
-        String sql = "SELECT *  FROM orders o JOIN contacts c ON o.contact_id = c.contact_id WHERE c.customer_id =?";
+        String sql = "SELECT *  FROM orders o JOIN contacts c ON o.contact_id = c.contact_id WHERE c.customer_id =? ORDER BY o.update_date DESC";
         Connection con = null;
         try {
             con = DBUtils.getConnection();
             PreparedStatement pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, custormerId);
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()){
                 orderEntities = new OrderEntities();

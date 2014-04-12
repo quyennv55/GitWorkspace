@@ -12,7 +12,7 @@ public class CustomerLineModel {
     String customerName;
     String contactName;
     String email;
-    int totalEquiment;
+    int totalAmount;
     String lastOrder;
 
     public int getCustomerId() {
@@ -47,12 +47,12 @@ public class CustomerLineModel {
         this.email = email;
     }
 
-    public int getTotalEquiment() {
-        return totalEquiment;
+    public int getTotalAmount() {
+        return totalAmount;
     }
 
-    public void setTotalEquiment(int totalEquiment) {
-        this.totalEquiment = totalEquiment;
+    public void setTotalAmount(int totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
     public String getLastOrder() {

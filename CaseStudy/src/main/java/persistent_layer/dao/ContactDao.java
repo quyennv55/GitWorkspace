@@ -89,6 +89,27 @@ public class ContactDao {
             e.printStackTrace();
         }
     }
-
+    // Find contact by Order Number
+    public ContactEntities findContactByOrder(int orderNumber){
+        ContactEntities contactEntities = new ContactEntities();
+        String sql = "SELECT c.* FROM contacts c JOIN orders o on c.contact_id = o.contact_id WHERE o.order_number ="+ orderNumber;
+        Connection con = null;
+        try {
+            con = DBUtils.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()){
+                contactEntities.setCustomerId(rs.getInt("customer_id"));
+                contactEntities.setMainContact(rs.getBoolean("main_contact"));
+                contactEntities.setJobTitle(rs.getString("job_title"));
+                contactEntities.setEmail(rs.getString("email"));
+                contactEntities.setTel(rs.getString("tel"));
+                contactEntities.setContactName(rs.getString("contact_name"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return contactEntities;
+    }
 
 }
