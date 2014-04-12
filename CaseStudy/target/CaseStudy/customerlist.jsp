@@ -65,7 +65,7 @@
                 for(int i= start * numberOfRow; i< finish ; i++){
                 %>
                 <tr>
-                    <td><input type="image" name="myimage" value="<%= customerLineModelList.get(i).getCustomerId()%>" src="image/default.jpg" alt="Submit"></td>
+                    <td><input type="image" name="imageId" value="<%= customerLineModelList.get(i).getCustomerId()%>" src="image/default.jpg" alt="Submit"></td>
                     <td><%=customerLineModelList.get(i).getCustomerName()%></td>
                     <td><%=customerLineModelList.get(i).getContactName()%></td>
                     <td><%=customerLineModelList.get(i).getEmail()%></td>

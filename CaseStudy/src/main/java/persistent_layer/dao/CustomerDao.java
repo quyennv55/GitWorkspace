@@ -11,7 +11,7 @@ import java.util.List;
 
 
 public class CustomerDao {
-    public List<CustomerEntities> findCustomerById(){
+    public List<CustomerEntities> findCustomers(){
         List<CustomerEntities> result = new ArrayList<CustomerEntities>();
         CustomerEntities customerEntities = null;
         String sql = "SELECT * FROM customers";
@@ -33,5 +33,27 @@ public class CustomerDao {
             e.printStackTrace();
         }
         return result;
+    }
+    // Find customer with customer's id
+    public CustomerEntities findCustomerById(int customerId){
+        CustomerEntities customerEntities = null;
+        String sql = "SELECT * FROM customers WHERE customer_id = "+ customerId;
+        Connection con = null;
+        try {
+            con = DBUtils.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()){
+                customerEntities = new CustomerEntities();
+                customerEntities.setCustomerId(rs.getInt("customer_id"));
+                customerEntities.setCustomerName(rs.getString("customer_name"));
+                customerEntities.setAddress(rs.getString("address"));
+                customerEntities.setTel(rs.getString("tel"));
+                customerEntities.setFax(rs.getString("fax"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return customerEntities;
     }
 }

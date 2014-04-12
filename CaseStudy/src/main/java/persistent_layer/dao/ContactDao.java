@@ -37,8 +37,8 @@ public class ContactDao {
         return result;
     }
 
-    // Add contact to customer
-    public void addContact(int customerId, ContactEntities contactEntities){
+    // Insert contact to customer
+    public void addContact(ContactEntities contactEntities){
         String sql = "INSERT INTO contacts(contact_name, email, tel, job_title, main_contact, customer_id) VALUES(?,?,?,?,?,?)";
         Connection con = null;
         try {
@@ -56,16 +56,15 @@ public class ContactDao {
         }
     }
     // Find main contact by customer id
-    public  ContactEntities findContactByCustomer(int customerId){
+    public  ContactEntities findMainContactByCustomer(int customerId){
         ContactEntities contactEntities = null;
-        String sql = "SELECT * FROM contacts ct JOIN customers c on ct.customer_id = c.customer_id WHERE ct.customer_id = ? and ct.main_contact = 1 ";
+        String sql = "SELECT * FROM contacts WHERE customer_id = " + customerId+ " AND main_contact =1";
         Connection con = null;
         try {
             con = DBUtils.getConnection();
             PreparedStatement pstmt = con.prepareStatement(sql);
-            pstmt.setInt(1, customerId);
             ResultSet rs = pstmt.executeQuery();
-            while (rs.next()){
+            if (rs.next()){
                 contactEntities = new ContactEntities();
                 contactEntities.setContactId(rs.getInt("contact_id"));
                 contactEntities.setContactName(rs.getString("contact_name"));
@@ -79,5 +78,19 @@ public class ContactDao {
         }
         return contactEntities;
     }
+    // Update main contact by update all contact to 0
+    public void changeMainContact(int customerId){
+        ContactEntities contactEntities = null;
+        String sql = "UPDATE contacts SET main_contact = 0 WHERE customer_id ="+ customerId;
+        Connection con = null;
+        try {
+            con = DBUtils.getConnection();
+            PreparedStatement pstmt = con.prepareStatement(sql);
+            pstmt.executeQuery();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

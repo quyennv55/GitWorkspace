@@ -10,10 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDao {
+    // Find Order by Customer Id
     public List<OrderEntities> findOderById(int custormerId){
         List<OrderEntities> result = new ArrayList<OrderEntities>();
         OrderEntities orderEntities = null;
-        String sql = "SELECT *  FROM orders o JOIN contacts c ON o.contact_id = c.contact_id JOIN customers cu ON c.customer_id = cu.customer_id WHERE c.customer_id =?";
+        String sql = "SELECT *  FROM orders o JOIN contacts c ON o.contact_id = c.contact_id WHERE c.customer_id =?";
         Connection con = null;
         try {
             con = DBUtils.getConnection();

@@ -1,6 +1,7 @@
 package business_layer.services;
 
 import business_layer.models.CustomerLineModel;
+import business_layer.models.CustomerModel;
 import persistent_layer.dao.ContactDao;
 import persistent_layer.dao.CustomerDao;
 import persistent_layer.dao.OrderDao;
@@ -27,9 +28,9 @@ public class CustomerServices {
         CustomerDao customerDao = new CustomerDao();
         ContactDao contactDao = new ContactDao();
         OrderDao orderDao = new OrderDao();
-        List<CustomerEntities> customerEntitieses = customerDao.findCustomerById();
+        List<CustomerEntities> customerEntitieses = customerDao.findCustomers();
         for(int i=0; i< customerEntitieses.size(); i++){
-            ContactEntities contactEntities = contactDao.findContactByCustomer(customerEntitieses.get(i).getCustomerId());
+            ContactEntities contactEntities = contactDao.findMainContactByCustomer(customerEntitieses.get(i).getCustomerId());
             List<OrderEntities> orderEntities = orderDao.findEquipment(customerEntitieses.get(i).getCustomerId());
             customerLineModel = new CustomerLineModel();
             customerLineModel.setCustomerId(customerEntitieses.get(i).getCustomerId());
@@ -45,6 +46,19 @@ public class CustomerServices {
     //Des: search Customer has attribute like key word
     public CustomerLineModel searchCustomer(String keyword){
         return  null;
+
+    }
+    // Find customer by id
+    public CustomerModel findCustomerById(int customerId){
+        CustomerDao customerDao = new CustomerDao();
+        CustomerModel customerModel = new CustomerModel();
+        CustomerEntities customerEntities = customerDao.findCustomerById(customerId);
+        customerModel.setCustomerId(customerEntities.getCustomerId());
+        customerModel.setCustomerName(customerEntities.getCustomerName());
+        customerModel.setAddress(customerEntities.getAddress());
+        customerModel.setFax(customerEntities.getFax());
+        customerModel.setTel(customerEntities.setTel(););
+        return customerModel;
 
     }
 }
