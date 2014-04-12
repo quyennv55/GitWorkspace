@@ -9,7 +9,7 @@
         function openerWindow(){
             var le = (screen.width/2)-300;
             var to = (screen.height/2)-130;
-            controlWindow=window.open("addcontact.jsp","addcomtact","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=300,height=200,left="+le+",top="+to+",screenX=0,screenY=0'");
+            controlWindow=window.open("addcontact.jsp","addcomtact","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=300,height=150,left="+le+",top="+to+",screenX=0,screenY=0'");
         }
     </script>
 </head>

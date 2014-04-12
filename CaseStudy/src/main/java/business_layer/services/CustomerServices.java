@@ -57,7 +57,7 @@ public class CustomerServices {
         customerModel.setCustomerName(customerEntities.getCustomerName());
         customerModel.setAddress(customerEntities.getAddress());
         customerModel.setFax(customerEntities.getFax());
-        customerModel.setTel(customerEntities.setTel(););
+        customerModel.setTel(customerEntities.getTel());
         return customerModel;
 
     }

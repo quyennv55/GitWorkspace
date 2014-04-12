@@ -58,13 +58,13 @@ public class ContactDao {
     // Find main contact by customer id
     public  ContactEntities findMainContactByCustomer(int customerId){
         ContactEntities contactEntities = null;
-        String sql = "SELECT * FROM contacts WHERE customer_id = " + customerId+ " AND main_contact =1";
+        String sql = "SELECT * FROM contacts WHERE customer_id = " + customerId+ " AND main_contact = 1";
         Connection con = null;
         try {
             con = DBUtils.getConnection();
             PreparedStatement pstmt = con.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
-            if (rs.next()){
+            while (rs.next()){
                 contactEntities = new ContactEntities();
                 contactEntities.setContactId(rs.getInt("contact_id"));
                 contactEntities.setContactName(rs.getString("contact_name"));
