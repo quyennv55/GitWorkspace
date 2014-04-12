@@ -26,7 +26,7 @@
     <div>
         <%
             List<CustomerLineModel> customerLineModelList = (List<CustomerLineModel>) session.getAttribute("customerlist");
-            int numberOfRow = 2;
+            int numberOfRow = 5;
             String current_page = request.getParameter("pages");
         %>
         <table name="listcustomer" weigth="100%">
