@@ -37,7 +37,7 @@ public class CustomerServices {
             customerLineModel.setCustomerName(customerEntitieses.get(i).getCustomerName());
             customerLineModel.setContactName(contactEntities.getContactName());
             customerLineModel.setEmail(contactEntities.getEmail());
-            customerLineModel.setTotalEquiment(orderEntities.size());
+            customerLineModel.setTotalAmount(orderEntities.size());
             customerLineModel.setLastOrder(orderEntities.get(0).getUpdateDate().toString());
             result.add(customerLineModel);
         }

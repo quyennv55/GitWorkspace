@@ -5,7 +5,7 @@
     <ignored path="CaseStudy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/CustomerLineModel.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397297592733" ignored="false" />
-    <file path="/CustomerServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397272315834" ignored="false" />
+    <file path="/CustomerServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397298220442" ignored="false" />
     <file path="/ContactEntities.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397157475355" ignored="false" />
     <file path="/CustomerEntities.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397157505519" ignored="false" />
     <file path="/OrderEntities.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397144712779" ignored="false" />
@@ -90,6 +90,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="CustomerServices.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="45" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.47592068">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CustomerDetailServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,18 +128,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServices.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="46" selection-start="321" selection-end="337" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#503#517#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="customerdetail.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customerdetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -140,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactEntities.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ContactEntities.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/ContactEntities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="180" selection-end="190" vertical-scroll-proportion="0.46932516">
+            <state line="9" column="18" selection-start="180" selection-end="190" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/entities/ContactEntities.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistent_layer/entities/ProductEntities.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/addcontact.jsp" />
@@ -216,6 +212,7 @@
         <option value="$PROJECT_DIR$/src/main/java/business_layer/models/CustomerLineModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/services/OrderServices.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/customerdetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java" />
       </list>
     </option>
   </component>
@@ -843,7 +840,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952815" sideWeight="0.6268908" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277311" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24906507" sideWeight="0.28907564" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -851,8 +848,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961948" sideWeight="0.6268908" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37310925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961948" sideWeight="0.6722689" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37310925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -925,13 +922,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/ContactModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/CustomerModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
@@ -1046,7 +1036,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/ContactEntities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="180" selection-end="190" vertical-scroll-proportion="0.46932516">
+        <state line="9" column="18" selection-start="180" selection-end="190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="45" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.47592068">
           <folding />
         </state>
       </provider>
