@@ -14,16 +14,18 @@
     <file path="/DBUtils.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397146042581" ignored="false" />
     <file path="/CustomerDao.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397267074617" ignored="false" />
     <file path="/OrderDao.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397267767777" ignored="false" />
-    <file path="/ContactDao.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397272427433" ignored="false" />
+    <file path="/ContactDao.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397276463999" ignored="false" />
     <file path="/CustomerLineServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397269284207" ignored="false" />
     <file path="/web.xml" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397273889815" ignored="false" />
     <file path="/index.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397192512990" ignored="false" />
     <file path="/customerlist.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397209543100" ignored="false" />
-    <file path="/CustomerDetailServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397270667194" ignored="false" />
-    <file path="/addcontact.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397274128651" ignored="false" />
-    <file path="/ContactServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397270423360" ignored="false" />
-    <file path="/customerdetail.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397273374687" ignored="false" />
-    <file path="/AddContactServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397274240293" ignored="false" />
+    <file path="/CustomerDetailServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397288487213" ignored="false" />
+    <file path="/addcontact.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397289574037" ignored="false" />
+    <file path="/ContactServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397276290967" ignored="false" />
+    <file path="/customerdetail.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397289265188" ignored="false" />
+    <file path="/AddContactServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397290100759" ignored="false" />
+    <file path="/ProductDao.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397288936760" ignored="false" />
+    <file path="/ProductServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397288240737" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -74,7 +77,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -87,25 +89,7 @@
       <file leaf-file-name="CustomerServices.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="65" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerEntities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/CustomerEntities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/dao/ContactDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="82" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+            <state line="22" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,8 +98,20 @@
       <file leaf-file-name="CustomerDetailServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="5" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
+            <state line="35" column="62" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDao.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/dao/ProductDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="58" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#441#458#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,7 +119,7 @@
       <file leaf-file-name="AddContactServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/AddContactServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="62" selection-start="873" selection-end="873" vertical-scroll-proportion="0.8575419">
+            <state line="36" column="57" selection-start="1652" selection-end="1652" vertical-scroll-proportion="0.009202454">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,11 +127,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/OrderModel.java">
+      <file leaf-file-name="ProductServices.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="25" column="29" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#503#517#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,7 +142,7 @@
       <file leaf-file-name="customerdetail.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customerdetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="175" selection-start="537" selection-end="537" vertical-scroll-proportion="-3.2692308">
+            <state line="79" column="154" selection-start="3331" selection-end="3331" vertical-scroll-proportion="-6.4615383">
               <folding />
             </state>
           </provider>
@@ -152,34 +151,34 @@
       <file leaf-file-name="addcontact.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/addcontact.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.9230769">
+            <state line="24" column="92" selection-start="920" selection-end="920" vertical-scroll-proportion="-8.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="customerlist.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/customerlist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="1" selection-start="130" selection-end="130" vertical-scroll-proportion="-2.72">
+            <state line="67" column="57" selection-start="2167" selection-end="2167" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="ContactServices.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ContactServices.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="45" selection-start="1462" selection-end="1477" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/CustomerModel.java">
+      <file leaf-file-name="ProductModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/ProductModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -195,20 +194,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/ProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/customerlist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation_layer/CustomerLineServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/models/CustomerModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/models/ContactModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/business_layer/services/ContactServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistent_layer/entities/CustomerEntities.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/ContactDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/customerdetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/entities/ContactEntities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/business_layer/services/ContactServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/ContactDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/entities/ProductEntities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/business_layer/models/ProductModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customerdetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/addcontact.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/presentation_layer/AddContactServlet.java" />
       </list>
@@ -255,8 +254,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,33 +316,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaseStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CaseStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,6 +490,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,19 +501,20 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/WorkSpace/Demo" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\GitWorkspace\CaseStudy\src\main\webapp\css" />
       <recent name="E:\GitHub\GitWorkspace\CaseStudy\src\main\webapp\image" />
       <recent name="E:\NguyenVanQuyen\Workspace\CaseStudy\src\main\webapp\image" />
     </key>
@@ -655,14 +629,14 @@
     <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
       <deployment>
-        <artifact name="CaseStudy:war">
+        <artifact name="CaseStudy:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_CaseStudy_2" />
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_CaseStudy_23" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -688,7 +662,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="CaseStudy:war" />
+          <artifact name="CaseStudy:war exploded" />
         </option>
       </method>
     </configuration>
@@ -704,6 +678,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -732,19 +719,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -814,7 +788,7 @@
         <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
         <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
         <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-        <item index="4" class="java.lang.String" itemvalue="Tomcat Server.customerlist.jsp" />
+        <item index="4" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -865,14 +839,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961948" sideWeight="0.28907564" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24906507" sideWeight="0.28907564" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961948" sideWeight="0.39159665" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31932774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24961948" sideWeight="0.6268908" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37310925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -945,123 +919,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/ContactEntities.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="91" selection-end="210" vertical-scroll-proportion="0.0">
+        <state line="12" column="38" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/OrderServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/dao/OrderDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="11" column="13" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/OrderEntities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ContactServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="41" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customerlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="57" selection-start="2167" selection-end="2167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/OrderModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/ContactModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="33" selection-start="163" selection-end="163" vertical-scroll-proportion="0.21715328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/CustomerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/CustomerEntities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="65" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.0">
+        <state line="8" column="24" selection-start="152" selection-end="171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/dao/ContactDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="82" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.0">
+        <state line="49" column="62" selection-start="2087" selection-end="2101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/dao/CustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/entities/ProductEntities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="72" selection-end="185" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/ProductModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ContactServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="45" selection-start="1462" selection-end="1477" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="13" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="29" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#503#517#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="62" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/persistent_layer/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="58" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#441#458#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customerlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="57" selection-start="2167" selection-end="2167" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/customerdetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="175" selection-start="537" selection-end="537" vertical-scroll-proportion="-3.2692308">
+        <state line="79" column="154" selection-start="3331" selection-end="3331" vertical-scroll-proportion="-6.4615383">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="130" selection-end="130" vertical-scroll-proportion="-2.72">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/addcontact.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.9230769">
+        <state line="24" column="92" selection-start="920" selection-end="920" vertical-scroll-proportion="-8.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/AddContactServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="62" selection-start="873" selection-end="873" vertical-scroll-proportion="0.8575419">
+        <state line="36" column="57" selection-start="1652" selection-end="1652" vertical-scroll-proportion="0.009202454">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

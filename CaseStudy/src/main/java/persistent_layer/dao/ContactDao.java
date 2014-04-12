@@ -23,7 +23,6 @@ public class ContactDao {
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()){
                 contactEntities = new ContactEntities();
-                contactEntities.setContactId(rs.getInt("contact_id"));
                 contactEntities.setContactName(rs.getString("contact_name"));
                 contactEntities.setEmail(rs.getString("email"));
                 contactEntities.setTel(rs.getString("tel"));
@@ -66,7 +65,6 @@ public class ContactDao {
             ResultSet rs = pstmt.executeQuery();
             while (rs.next()){
                 contactEntities = new ContactEntities();
-                contactEntities.setContactId(rs.getInt("contact_id"));
                 contactEntities.setContactName(rs.getString("contact_name"));
                 contactEntities.setEmail(rs.getString("email"));
                 contactEntities.setTel(rs.getString("tel"));
@@ -86,7 +84,7 @@ public class ContactDao {
         try {
             con = DBUtils.getConnection();
             PreparedStatement pstmt = con.prepareStatement(sql);
-            pstmt.executeQuery();
+            pstmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -2,29 +2,41 @@ package presentation_layer;
 
 import business_layer.models.ContactModel;
 import business_layer.models.CustomerModel;
+import business_layer.models.ProductModel;
 import business_layer.services.ContactServices;
 import business_layer.services.CustomerServices;
+import business_layer.services.ProductServices;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 public class CustomerDetailServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
         CustomerServices customerServices = new CustomerServices();
         ContactServices contactServices = new ContactServices();
+        ProductServices productServices = new ProductServices();
+        // Get customer id when user click customer
         String customerId = request.getParameter("imageId");
         Integer cusId = Integer.parseInt(customerId); // Convert customer id from string type to integer
+        // Find customer by id
         CustomerModel customerModel = customerServices.findCustomerById(cusId);
+        // Find main contact of each customer
         ContactModel contactModel = contactServices.findMainContact(cusId);
-        request.setAttribute("customerModel", customerModel);
-        request.setAttribute("contactModel", contactModel);
-        RequestDispatcher rd = request.getRequestDispatcher("customerdetail.jsp");
-        rd.forward(request, response);
+        // Find all equipment of each customer
+        List<ProductModel> productModels = productServices.findAllEquipment(cusId);
+        session.setAttribute("customerModel", customerModel);
+        session.setAttribute("contactModel", contactModel);
+        session.setAttribute("listEquipment", productModels);
+        response.sendRedirect("customerdetail.jsp");
+        //RequestDispatcher rd = request.getRequestDispatcher("customerdetail.jsp");
+        //rd.forward(request, response);
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

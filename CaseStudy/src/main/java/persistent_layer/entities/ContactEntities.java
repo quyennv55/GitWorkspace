@@ -2,21 +2,12 @@ package persistent_layer.entities;
 
 
 public class ContactEntities {
-    int contactId;
     String contactName;
     String email;
     String tel;
     String jobTitle;
     Boolean mainContact;
     int customerId;
-
-    public int getContactId() {
-        return contactId;
-    }
-
-    public void setContactId(int contactId) {
-        this.contactId = contactId;
-    }
 
     public String getContactName() {
         return contactName;

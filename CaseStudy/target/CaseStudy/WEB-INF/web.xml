@@ -20,4 +20,12 @@
       <servlet-name>CustomerDetailServlet</servlet-name>
       <url-pattern>/CustomerDetailServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+      <servlet-name>AddContactServlet</servlet-name>
+      <servlet-class>presentation_layer.AddContactServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AddContactServlet</servlet-name>
+      <url-pattern>/AddContactServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
