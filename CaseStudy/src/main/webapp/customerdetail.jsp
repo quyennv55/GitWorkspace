@@ -81,13 +81,13 @@
                     <tr><td width="20%"><b>Serial</b></td><td width="30%"><b>Manufacturer</b></td><td width="30%"><b>Model</b></td><td width="20%"><b>Year</b></td></tr>
                     <%
                         List<ProductModel> productModels = (List<ProductModel>) session.getAttribute("listEquipment");
-                        for(int i=0; i< productModels.size(); i++){
+                        for(ProductModel productModel:productModels){
                         %>
                         <tr>
-                            <td><%=productModels.get(i).getProductId()%></td>
-                            <td><%=productModels.get(i).getManufacturer()%></td>
-                            <td><%=productModels.get(i).getModel()%></td>
-                            <td><%=productModels.get(i).getYear()%></td>
+                            <td><%=productModel.getProductId()%></td>
+                            <td><%=productModel.getManufacturer()%></td>
+                            <td><%=productModel.getModel()%></td>
+                            <td><%=productModel.getYear()%></td>
                         </tr>
                         <%
                         }
@@ -102,7 +102,7 @@
                         for(OrderLineModel orderLineModel:orderLineModels){
                     %>
                     <tr>
-                        <td><%=orderLineModel.getOrderNumber()%></td>
+                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModel.getOrderNumber()%>&date=<%=orderLineModel.getCreateDate()%>"><%=orderLineModel.getOrderNumber()%></a></td>
                         <td><%=orderLineModel.getContact()%></td>
                         <td><%=orderLineModel.getTotalAmount()%></td>
                         <td><%=orderLineModel.getCreateDate()%></td>

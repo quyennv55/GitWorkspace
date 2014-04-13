@@ -37,7 +37,7 @@ public class OrderServices {
                 amount += productEntitiese.getPrice();
             }
             orderLineModel.setYear(productEntitieses.get(0).getYear()); // Set year
-            orderLineModel.setTotalAmount(amount);
+            orderLineModel.setTotalAmount(amount); // Set total amout
             orderLineModels.add(orderLineModel);
         }
         return orderLineModels;

@@ -69,7 +69,7 @@
                     <td><%=customerLineModelList.get(i).getCustomerName()%></td>
                     <td><%=customerLineModelList.get(i).getContactName()%></td>
                     <td><%=customerLineModelList.get(i).getEmail()%></td>
-                    <td><%=customerLineModelList.get(i).getTotalEquiment()%></td>
+                    <td><%=customerLineModelList.get(i).getTotalAmount()%></td>
                     <td><%=customerLineModelList.get(i).getLastOrder()%></td>
                 </tr>
                 <%
