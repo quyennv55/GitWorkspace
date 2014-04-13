@@ -38,6 +38,7 @@ public class CustomerDetailServlet extends HttpServlet {
         session.setAttribute("customerModel", customerModel);
         session.setAttribute("contactModel", contactModel);
         session.setAttribute("listEquipment", productModels);
+        System.out.println("Test:"+ productModels.size());
         session.setAttribute("orderLines", orderLineModels);
         response.sendRedirect("customerdetail.jsp");
     }

@@ -5,7 +5,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>Product Detail</title>
 </head>
 <body>
 <%
@@ -42,10 +42,10 @@
 <div>
     <table width="100%">
     <tr>
-        <td>Product</td>
-        <td>Description</td>
-        <td></td>
-        <td>Price</td>
+        <td width="20%">Product</td>
+        <td width="40%">Description</td>
+        <td width="20%"></td>
+        <td width="20%">Price</td>
     </tr>
     <%
         int total = 0;
@@ -54,7 +54,7 @@
         %>
         <tr>
             <td><%=productModel.getProductId()%></td>
-            <td><%=productModel.getProductId()%>,<%=productModel.getManufacturer()%>,<%=productModel.getModel()%>, year-<%=productModel.getYear()%></td>
+            <td><%=productModel.getProductId()%>, <%=productModel.getManufacturer()%>, <%=productModel.getModel()%>, year-<%=productModel.getYear()%></td>
             <td></td>
             <td><%=productModel.getPrice()%></td>
         </tr>

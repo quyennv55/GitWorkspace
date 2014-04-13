@@ -81,24 +81,69 @@
                     <tr><td width="20%"><b>Serial</b></td><td width="30%"><b>Manufacturer</b></td><td width="30%"><b>Model</b></td><td width="20%"><b>Year</b></td></tr>
                     <%
                         List<ProductModel> productModels = (List<ProductModel>) session.getAttribute("listEquipment");
-                        for(ProductModel productModel:productModels){
+                        int numberOfRow = 2;
+                        String current_page = request.getParameter("pages");
+                        int start;
+                        int finish;
+                        if(current_page != null){
+                            Integer current = Integer.parseInt(current_page);
+                            start = current -1;
+                        }else {
+                            start = 0;
+                        }
+                        if((start+1)* numberOfRow > productModels.size())
+                            finish = productModels.size();
+                        else
+                            finish = (start +1)*numberOfRow;
+                        for(int i= start * numberOfRow; i< finish; i++){
                         %>
                         <tr>
-                            <td><%=productModel.getProductId()%></td>
-                            <td><%=productModel.getManufacturer()%></td>
-                            <td><%=productModel.getModel()%></td>
-                            <td><%=productModel.getYear()%></td>
+                            <td><%=productModels.get(i).getProductId()%></td>
+                            <td><%=productModels.get(i).getManufacturer()%></td>
+                            <td><%=productModels.get(i).getModel()%></td>
+                            <td><%=productModels.get(i).getYear()%></td>
                         </tr>
                         <%
                         }
                     %>
                 </table>
+                <div>
+                    <%
+                        int pageNumbers;
+                        if(productModels.size()%numberOfRow ==0)
+                            pageNumbers = productModels.size()/numberOfRow;
+                        else
+                            pageNumbers = productModels.size()/numberOfRow +1;
+                        if(current_page != null){
+                            Integer current = Integer.parseInt(current_page);
+                            if(current >1){
+                    %>
+                    <a href="/customerdetail.jsp?pages=<%=current-1%>">Previous</a>
+                    <%
+                            }
+                        }
+                        for(int p = 1; p <= pageNumbers; p ++){
+                    %>
+                    <a href="/customerdetail.jsp?pages=<%=p%>"><%=p%></a>
+                    <%
+                        }
+                        if(current_page != null){
+                            Integer current = Integer.parseInt(current_page);
+                            if(current != pageNumbers){
+                    %>
+                    <a href="/customerdetail.jsp?pages=<%=current+1%>">Next</a>
+                    <%
+                            }
+                        }
+                    %>
+                </div>
             </div>
             <div id="tab2" class="tab_content">
                 <table width="100%">
                     <tr><td width="20%"><b>Order Number</b></td><td width="20%"><b>Contact</b></td><td width="10%"><b>Total Amount</b></td><td width="20%"><b>Creation Date</b></td><td width="20%"><b>Updated Date</b></td><td width="10%"><b>Year</b></td></tr>
                     <%
                         List<OrderLineModel> orderLineModels = (List<OrderLineModel>) session.getAttribute("orderLines");
+
                         for(OrderLineModel orderLineModel:orderLineModels){
                     %>
                     <tr>

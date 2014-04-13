@@ -19,10 +19,10 @@
     <file path="/web.xml" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397317351786" ignored="false" />
     <file path="/index.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397192512990" ignored="false" />
     <file path="/customerlist.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397315517973" ignored="false" />
-    <file path="/CustomerDetailServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397297219605" ignored="false" />
+    <file path="/CustomerDetailServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397379562665" ignored="false" />
     <file path="/addcontact.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397289574037" ignored="false" />
     <file path="/ContactServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397276290967" ignored="false" />
-    <file path="/customerdetail.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397319032102" ignored="false" />
+    <file path="/customerdetail.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397380063205" ignored="false" />
     <file path="/AddContactServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397290100759" ignored="false" />
     <file path="/ProductDao.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397296251781" ignored="false" />
     <file path="/ProductServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397362642209" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/OrderServices.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397319527503" ignored="false" />
     <file path="/fragment.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397294647304" ignored="false" />
     <file path="/OrderDetailServlet.java" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397319086818" ignored="false" />
-    <file path="/orderdetail.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397363732173" ignored="false" />
+    <file path="/orderdetail.jsp" changelist="59968be8-0b95-4807-94a4-92da9e973d30" time="1397365203720" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,10 +92,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="customerdetail.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="customerdetail.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customerdetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="15" selection-start="5191" selection-end="5191" vertical-scroll-proportion="-3.9230769">
+            <state line="57" column="32" selection-start="2146" selection-end="2267" vertical-scroll-proportion="0.8815331">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDetailServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="50" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,7 +113,7 @@
       <file leaf-file-name="customerlist.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/customerlist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="39" selection-start="3372" selection-end="3372" vertical-scroll-proportion="-0.65384614">
+            <state line="96" column="43" selection-start="3443" selection-end="3443" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -119,10 +128,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderdetail.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="orderdetail.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/orderdetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="319" selection-end="319" vertical-scroll-proportion="0.22299652">
+            <state line="50" column="24" selection-start="1627" selection-end="1627" vertical-scroll-proportion="-9.730769">
               <folding />
             </state>
           </provider>
@@ -177,15 +186,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerLineModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/CustomerLineModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="47" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -202,16 +202,16 @@
         <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/ContactDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistent_layer/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/models/CustomerLineModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/services/CustomerServices.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/customerlist.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/customerdetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/presentation_layer/OrderDetailServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/services/OrderServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/business_layer/services/ProductServices.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/orderdetail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/customerdetail.jsp" />
       </list>
     </option>
   </component>
@@ -663,7 +663,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_CaseStudy_8" />
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_CaseStudy_16" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -812,7 +812,7 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ProductServices" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
         <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
         <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
         <item index="4" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
@@ -850,7 +850,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1376" height="754" extended-state="1" />
+    <frame x="-8" y="0" width="1376" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -990,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="71" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/business_layer/models/CustomerLineModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="47" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
@@ -1043,20 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customerdetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="15" selection-start="5191" selection-end="5191" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/customerlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="39" selection-start="3372" selection-end="3372" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1066,7 +1045,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/orderdetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="319" selection-end="319" vertical-scroll-proportion="0.22299652">
+        <state line="50" column="24" selection-start="1627" selection-end="1627" vertical-scroll-proportion="-9.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentation_layer/CustomerDetailServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="50" selection-start="2444" selection-end="2444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customerlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="43" selection-start="3443" selection-end="3443" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/customerdetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="32" selection-start="2146" selection-end="2267" vertical-scroll-proportion="0.8815331">
           <folding />
         </state>
       </provider>
