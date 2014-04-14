@@ -17,10 +17,12 @@ public class OrderDetailServlet extends HttpServlet{
         ProductServices productServices = new ProductServices();
         String orderNumber = request.getParameter("orderNumber");
         String createDate = request.getParameter("date");
+        String status = request.getParameter("status");
         List<ProductModel> productModelList = productServices.findProductsOrder(Integer.parseInt(orderNumber));
         request.setAttribute("productList", productModelList);
         request.setAttribute("numbers", orderNumber);
         request.setAttribute("date",createDate);
+        request.setAttribute("status", status);
         RequestDispatcher rd = request.getRequestDispatcher("orderdetail.jsp");
         rd.forward(request, response);
     }

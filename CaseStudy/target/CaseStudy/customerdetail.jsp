@@ -81,7 +81,7 @@
                     <tr><td width="20%"><b>Serial</b></td><td width="30%"><b>Manufacturer</b></td><td width="30%"><b>Model</b></td><td width="20%"><b>Year</b></td></tr>
                     <%
                         List<ProductModel> productModels = (List<ProductModel>) session.getAttribute("listEquipment");
-                        int numberOfRow = 2;
+                        int numberOfRow = 5;
                         String current_page = request.getParameter("pages");
                         int start;
                         int finish;
@@ -147,9 +147,9 @@
                         for(OrderLineModel orderLineModel:orderLineModels){
                     %>
                     <tr>
-                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModel.getOrderNumber()%>&date=<%=orderLineModel.getCreateDate()%>"><%=orderLineModel.getOrderNumber()%></a></td>
+                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModel.getOrderNumber()%>&date=<%=orderLineModel.getCreateDate()%>&status=<%= orderLineModel.getStatus()%>"><%=orderLineModel.getOrderNumber()%></a></td>
                         <td><%=orderLineModel.getContact()%></td>
-                        <td><%=orderLineModel.getTotalAmount()%></td>
+                        <td><%=orderLineModel.getTotalAmount()%>$</td>
                         <td><%=orderLineModel.getCreateDate()%></td>
                         <td><%=orderLineModel.getUpdateDate()%></td>
                         <td><%=orderLineModel.getYear()%></td>

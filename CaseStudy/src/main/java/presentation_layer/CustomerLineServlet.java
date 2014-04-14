@@ -24,6 +24,12 @@ public class CustomerLineServlet extends HttpServlet {
         HttpSession session = request.getSession();
         CustomerServices customerServices = new CustomerServices();
         List<CustomerLineModel> customerLineModels = customerServices.finfAllCustomerLine();
+        String keyword = request.getParameter("searchInput");
+        System.out.println("Tesst: "+ keyword);
+        if(keyword != null && keyword != ""){
+            List<CustomerLineModel> customerLineModelList = customerServices.searchByKey(keyword.toLowerCase(), customerLineModels);
+            request.setAttribute("searchResult", customerLineModelList);
+        }
         if(customerLineModels != null){
             session.setAttribute("customerlist", customerLineModels);
         }

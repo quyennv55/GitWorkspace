@@ -18,19 +18,57 @@
         <hr>
     </div>
     <div>
-        <form action="seach" method="get">
+        <form action="CustomerLineServlet" method="get">
             <input type="input" name="searchInput">
             <input type="submit" name="search" value="search">
         </form>
     </div>
     <div>
+        <form name="customer-list-form" method="post" action="CustomerDetailServlet">
         <%
+            List<CustomerLineModel> searchResults = (List<CustomerLineModel>) request.getAttribute("searchResult");
+            if(searchResults != null){
+            %>
+        <table name="listsearch" width="100%">
+             <tr>
+                <td></td>
+                <td weigh="20%">
+                    Customer Name
+                </td>
+                <td weigh="20%">
+                    Contact Name
+                </td>
+                <td weigh="20%">
+                    Email
+                </td>
+                <td weigh="20%">
+                    Total Equipment
+                </td>
+                <td weigh="20%">
+                   Last Order
+                </td>
+                </tr>
+            <%
+                for(CustomerLineModel customerLineModel :searchResults){
+            %>
+                <tr>
+                    <td><input type="image" name="imageId" value="<%= customerLineModel.getCustomerId()%>" src="image/default.jpg" alt="Submit"></td>
+                    <td><%=customerLineModel.getCustomerName()%></td><td><%=customerLineModel.getContactName()%></td><td><%=customerLineModel.getEmail()%></td>
+                    <td><%=customerLineModel.getTotalAmount()%></td><td><%=customerLineModel.getLastOrder()%></td>
+                </tr>
+            <%
+                }
+
+            %>
+        </table><br>
+        <hr>
+            <%
+            }
             List<CustomerLineModel> customerLineModelList = (List<CustomerLineModel>) session.getAttribute("customerlist");
             int numberOfRow = 5;
             String current_page = request.getParameter("pages");
         %>
         <table name="listcustomer" width="100%">
-        <form name="customer-list-form" method="post" action="CustomerDetailServlet">
             <tr>
                 <td></td>
                 <td weigh="20%">

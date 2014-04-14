@@ -61,5 +61,16 @@ public class CustomerServices {
         return customerModel;
 
     }
+    // Search by keyword from result list
+    public  List<CustomerLineModel> searchByKey(String key, List<CustomerLineModel> customerLineModelList){
+        List<CustomerLineModel> result = new ArrayList<CustomerLineModel>();
+        for (CustomerLineModel customerLineModel : customerLineModelList){
+            Integer total = customerLineModel.getTotalAmount();
+            if(customerLineModel.getCustomerName().toLowerCase().contains(key) || customerLineModel.getContactName().toLowerCase().contains(key)|| customerLineModel.getEmail().toLowerCase().contains(key)|| customerLineModel.getLastOrder().toLowerCase().contains(key)|| total.toString().toLowerCase().contains(key)){
+                result.add(customerLineModel);
+            }
+        }
+        return result;
+    }
 }
 

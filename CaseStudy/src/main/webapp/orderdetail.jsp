@@ -2,6 +2,7 @@
 <%@ page import="business_layer.models.ContactModel" %>
 <%@ page import="business_layer.models.ProductModel" %>
 <%@ page import="java.util.List" %>
+<%@ page import="business_layer.models.OrderLineModel" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -19,12 +20,12 @@
     <hr>
 </div>
 <div>
-    <table>
+    <table width="100%">
         <tr>
-            <td>
+            <td width="15%">
                 <img src="image/customer.jpg">
             </td>
-            <td>
+            <td width="65%">
                     <%= customerModel.getCustomerName()%><br>
                     <%= customerModel.getAddress()%><br>
                     Tel: <%= customerModel.getTel()%>&nbsp &nbsp
@@ -34,7 +35,8 @@
                     Tel: <%= customerModel.getTel()%>&nbsp &nbsp
                     Email: <%= contactModel.getEmail()%><br>
             </td>
-            <td>
+            <td width="20%">
+                <h1><%=request.getParameter("status")%></h1>
             </td>
         </tr>
     </table>
@@ -56,13 +58,13 @@
             <td><%=productModel.getProductId()%></td>
             <td><%=productModel.getProductId()%>, <%=productModel.getManufacturer()%>, <%=productModel.getModel()%>, year-<%=productModel.getYear()%></td>
             <td></td>
-            <td><%=productModel.getPrice()%></td>
+            <td>$<%=productModel.getPrice()%></td>
         </tr>
         <%
         }
     %>
     <tr>
-        <td></td><td></td><td>Total</td><td><%=total%></td>
+        <td></td><td></td><td>Total</td><td>$<%=total%></td>
     </tr>
     </table>
 </div>

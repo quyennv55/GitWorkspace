@@ -30,6 +30,7 @@ public class OrderServices {
             // find contact entity from order number
             ContactEntities contactEntities = contactDao.findContactByOrder(orderEntities.getOrderNumber());
             orderLineModel.setContact(contactEntities.getContactName());    // Set contact
+            orderLineModel.setStatus(orderEntities.getStatus());
             // Find list products by order number
             productEntitieses = productDao.findProductsByOrder(orderEntities.getOrderNumber());
             int amount = 0; // total amount for each order
@@ -37,7 +38,7 @@ public class OrderServices {
                 amount += productEntitiese.getPrice();
             }
             orderLineModel.setYear(productEntitieses.get(0).getYear()); // Set year
-            orderLineModel.setTotalAmount(amount); // Set total amout
+            orderLineModel.setTotalAmount(amount); // Set total amount
             orderLineModels.add(orderLineModel);
         }
         return orderLineModels;
