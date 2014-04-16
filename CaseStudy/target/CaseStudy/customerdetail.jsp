@@ -143,21 +143,65 @@
                     <tr><td width="20%"><b>Order Number</b></td><td width="20%"><b>Contact</b></td><td width="10%"><b>Total Amount</b></td><td width="20%"><b>Creation Date</b></td><td width="20%"><b>Updated Date</b></td><td width="10%"><b>Year</b></td></tr>
                     <%
                         List<OrderLineModel> orderLineModels = (List<OrderLineModel>) session.getAttribute("orderLines");
-
-                        for(OrderLineModel orderLineModel:orderLineModels){
+                        int numberOfRow2 = 1;
+                        String current_page2 = request.getParameter("pages2");
+                        int start2;
+                        int finish2;
+                        if(current_page2 != null){
+                            Integer current2 = Integer.parseInt(current_page2);
+                            start2 = current2 -1;
+                        }else {
+                            start2 = 0;
+                        }
+                        if((start2+1)* numberOfRow2 > productModels.size())
+                            finish2 = orderLineModels.size();
+                        else
+                            finish2 = (start2 +1)*numberOfRow2;
+                        for(int j= start2 * numberOfRow2; j< finish2; j++){
+                        /*for(OrderLineModel orderLineModel:orderLineModels){*/
                     %>
                     <tr>
-                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModel.getOrderNumber()%>&date=<%=orderLineModel.getCreateDate()%>&status=<%= orderLineModel.getStatus()%>"><%=orderLineModel.getOrderNumber()%></a></td>
-                        <td><%=orderLineModel.getContact()%></td>
-                        <td><%=orderLineModel.getTotalAmount()%>$</td>
-                        <td><%=orderLineModel.getCreateDate()%></td>
-                        <td><%=orderLineModel.getUpdateDate()%></td>
-                        <td><%=orderLineModel.getYear()%></td>
+                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModels.get(j).getOrderNumber()%>&date=<%=orderLineModels.get(j).getCreateDate()%>"><%=orderLineModels.get(j).getOrderNumber()%></a></td>
+                        <td><%=orderLineModels.get(j).getContact()%></td>
+                        <td><%=orderLineModels.get(j).getTotalAmount()%></td>
+                        <td><%=orderLineModels.get(j).getCreateDate()%></td>
+                        <td><%=orderLineModels.get(j).getUpdateDate()%></td>
+                        <td><%=orderLineModels.get(j).getYear()%></td>
                     </tr>
                     <%
                         }
                     %>
                 </table>
+                <div>
+                    <%
+                        int pageNumbers2;
+                        if(orderLineModels.size()%numberOfRow2 ==0)
+                            pageNumbers2 = orderLineModels.size()/numberOfRow2;
+                        else
+                            pageNumbers2 = orderLineModels.size()/numberOfRow2 +1;
+                        if(current_page2 != null){
+                            Integer current2 = Integer.parseInt(current_page2);
+                            if(current2 >1){
+                    %>
+                    <a href="/customerdetail.jsp?pages2=<%=current2-1%>">Previous</a>
+                    <%
+                            }
+                        }
+                        for(int p2 = 1; p2 <= pageNumbers2; p2 ++){
+                    %>
+                    <a href="/customerdetail.jsp?pages2=<%=p2%>"><%=p2%></a>
+                    <%
+                        }
+                        if(current_page2 != null){
+                            Integer current2 = Integer.parseInt(current_page2);
+                            if(current2 != pageNumbers2){
+                    %>
+                    <a href="/customerdetail.jsp?pages2=<%=current2+1%>">Next</a>
+                    <%
+                            }
+                        }
+                    %>
+                </div>
             </div>
         </div>
     </div>
