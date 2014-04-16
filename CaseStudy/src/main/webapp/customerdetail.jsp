@@ -161,7 +161,7 @@
                         /*for(OrderLineModel orderLineModel:orderLineModels){*/
                     %>
                     <tr>
-                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModels.get(j).getOrderNumber()%>&date=<%=orderLineModels.get(j).getCreateDate()%>"><%=orderLineModels.get(j).getOrderNumber()%></a></td>
+                        <td><a href="/OrderDetailServlet?orderNumber=<%=orderLineModels.get(j).getOrderNumber()%>&date=<%=orderLineModels.get(j).getCreateDate()%>&status=<%=orderLineModels.get(j).getStatus()%>"><%=orderLineModels.get(j).getOrderNumber()%></a></td>
                         <td><%=orderLineModels.get(j).getContact()%></td>
                         <td><%=orderLineModels.get(j).getTotalAmount()%></td>
                         <td><%=orderLineModels.get(j).getCreateDate()%></td>
